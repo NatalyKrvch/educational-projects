@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>ToDo App</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+
+  <body>
+    <div class="body-div">
+      <div class="main-div">
+        <h1>ToDo</h1>
+        <div class="table-block">
+          <div class="table-text-wrapper">
+            <input
+              autofocus
+              class="text"
+              type="text"
+              placeholder="Add your new todo"
+              maxlength="40"
+              onkeydown="addByEnter(event)"
+            />
+          </div>
+          <button class="add-button" type="button" onclick="addItem ()">
+            <img class="add-button-image" src="images/plus.png" alt="Add" />
+          </button>
+        </div>
+
+        <div class="container"></div>
+        <div class="footer">
+          <div class="counter">
+            You have <span class="counter-number">no</span> pending task<span
+              class="plural"
+              >s</span
+            >
+          </div>
+          <div class="clear-button-div">
+            <button
+              class="clear-button"
+              onclick="removeAllItems()"
+              type="button"
+            >
+              Clear All
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
