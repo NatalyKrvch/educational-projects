@@ -1,6 +1,6 @@
 Task deskription:
 
-You need to create ToDo app. It should record daily tasks.
+You need to create ToDo app. It should store daily tasks.
 
 Requirements:
 
