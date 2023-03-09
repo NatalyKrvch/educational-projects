@@ -1,5 +1,5 @@
 import React from "react";
-import reactDOM from "react-dom";
+import { createRoot } from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.css";
 import Counter from "./components/counter";
 
@@ -7,4 +7,6 @@ const App = () => {
     return <Counter />;
 }
 
-reactDOM.render(<App />, document.getElementById('root'));
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App tab="home" />);
