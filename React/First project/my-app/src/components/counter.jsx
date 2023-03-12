@@ -24,8 +24,6 @@ const Counter = () => {
 
   const handleTagChange = (id) => {
     setTags((prevState) => prevState.filter((tag) => tag !== id));
-    console.log(id);
-    // setTags(["tag4", "tag5"]);
   };
 
   return (
