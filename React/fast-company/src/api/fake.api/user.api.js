@@ -84,7 +84,7 @@ const users = [
         _id: "67rdca3eeb7f6fgeed471822",
         name: "Nikola Tesla",
         profession: professions.engineer,
-        qualities: [qualities.handsome],
+        qualities: [qualities.strange],
         completedMeetings: 72,
         rate: 5,
         bookmark: false
